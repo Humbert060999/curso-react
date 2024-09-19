@@ -1,0 +1,7 @@
+.app-container {
+  background-image: url("./IMG/Fondo.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Hace que cubra toda la pantalla */
+  width: 100vw;
+}

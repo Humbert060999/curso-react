@@ -1,0 +1,48 @@
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20%;
+}
+
+.line {
+  background-color: #41434e;
+  width: 50%;
+  height: 10px;
+}
+
+.menu-options {
+  width: 70%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.071);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.button-content {
+  margin-left: 3%;
+}
+
+.button-options:hover {
+  border-radius: 0;
+  border-bottom: solid 3px #fff;
+}
+
+.button-options {
+  background-color: transparent;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  height: 90px;
+  border: none;
+}
+
+.button-options:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: solid 3px #fff;
+  border-radius: 0;
+}
