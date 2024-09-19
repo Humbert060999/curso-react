@@ -19,6 +19,7 @@ export default function Navigation() {
           <button  className="button-options" type="link">
             00 INICIO
           </button>
+          
         </div>
         <div className="button-content">
           <button className="button-options" type="link">
