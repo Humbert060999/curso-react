@@ -5,17 +5,23 @@
   height: 20%;
 }
 
+.icon-star{
+  height: 50%;
+  margin-left: 5%;
+}
+
 .line {
   background-color: #41434e;
   width: 50%;
-  height: 10px;
+  height: 2px;
+  margin-left: 3%;
 }
 
 .menu-options {
   width: 70%;
   height: 60%;
   background-color: rgba(255, 255, 255, 0.071);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,12 +34,13 @@
 
 .button-options:hover {
   border-radius: 0;
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 4px #ffffff77;
 }
 
 .button-options {
   background-color: transparent;
   font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
   font-weight: 300;
   color: #fff;
   height: 90px;
@@ -43,6 +50,7 @@
 .button-options:focus {
   outline: none;
   box-shadow: none;
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 4px #fff;
   border-radius: 0;
 }
+

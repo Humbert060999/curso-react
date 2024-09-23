@@ -2,6 +2,12 @@
   background-image: url("./IMG/Fondo.svg");
   background-size: cover;
   background-position: center;
-  height: 100vh; /* Hace que cubra toda la pantalla */
+  height: 100vh; 
   width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    background-image: url("./IMG/Mobile-Navigation-Menu.svg");
+  }
 }

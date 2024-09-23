@@ -1,0 +1,42 @@
+.menu-container-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%;
+}
+
+.icon-star-mobile {
+  height: 50%;
+  margin-left: 5%;
+}
+
+.button-menu-mobile {
+  background-color: transparent;
+  padding-top: 0;
+  color: #fff;
+  border: none;
+}
+
+.button-menu-mobile:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.icon-menu-mobile {
+  font-size: 40px;
+}
+
+.menu-options-mobile {
+  background-color: transparent;
+}
+
+.custom-close-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.custom-close-icon:focus {
+  outline: none;
+  box-shadow: none;
+}

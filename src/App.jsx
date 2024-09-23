@@ -1,11 +1,38 @@
+import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Ejemplo from "./Components/Ejemplo/Pokemon";
 import Menu from "./Components/Menu/Menu";
+import Home from "./pages/Home/Home";
+import Destination from "./pages/Destination/Destination";
+import Crew from "./pages/Crew/Crew";
+import Technology from "./pages/Technology/Technology";
+import MenuMobile from "./Components/Menu/MenuMobile";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detectar si la pantalla es de móvil
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    // Escuchar cambios en el tamaño de la pantalla
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Comprobar inicialmente el tamaño
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="app-container">
-      <Menu />
+      {isMobile ? <MenuMobile /> : <Menu />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/destinos" element={<Destination />} />
+        <Route path="/tripulacion" element={<Crew />} />
+        <Route path="/tecnologias" element={<Technology />} />
+      </Routes>
     </div>
   );
 }
