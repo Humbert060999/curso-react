@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import Menu from "./Components/Menu/Menu";
 import Home from "./pages/Home/Home";
@@ -10,22 +10,27 @@ import MenuMobile from "./Components/Menu/MenuMobile";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
+  const [background, setBackground] = useState("fondo-inicio");
+  const navigate = useNavigate();
 
-  // Detectar si la pantalla es de móvil
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
   };
 
+  const changeBackground = (newBackground) => {
+    setBackground(newBackground);
+  };
+
   useEffect(() => {
-    // Escuchar cambios en el tamaño de la pantalla
+    navigate("/");
     window.addEventListener("resize", handleResize);
-    handleResize(); // Comprobar inicialmente el tamaño
+    handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div className="app-container">
-      {isMobile ? <MenuMobile /> : <Menu />}
+    <div className={background}>
+      {isMobile ? <MenuMobile /> : <Menu changeBackground={changeBackground} />}
 
       <Routes>
         <Route path="/" element={<Home />} />

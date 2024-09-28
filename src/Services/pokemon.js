@@ -10,11 +10,3 @@ export const getPokemons = async () => {
   }
 };
 
-export const createPokemon = (body) => {
-  try {
-    const response = api.post("pokemon", body);
-    console.log(response);
-  } catch (error) {
-    console.log("El error es", error);
-  }
-};

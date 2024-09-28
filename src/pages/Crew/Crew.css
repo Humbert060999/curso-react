@@ -1,0 +1,77 @@
+.crew-container {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  color: #fff;
+}
+
+.crew-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+}
+
+.crew-description {
+  width: 45%;
+  padding: 0 5% 0 10%;
+}
+
+.crew-information {
+  margin-top: 20%;
+}
+
+.crew-range {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.crew-name {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  margin: 0;
+}
+
+.crew-text {
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+}
+
+.crew-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin-top: 8%;
+}
+
+.menu-item {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff7d;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none; 
+  border: none; 
+}
+
+.menu-item:hover {
+  background-color: #ffffff; 
+}
+
+.menu-item:hover {
+  background-color: #ffffff; 
+}
+.menu-item:focus {
+  outline: none; 
+background-color: #fff;
+}
+
+.crew-photo-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.crew-photo {
+  width: 58%;
+}

@@ -1,0 +1,26 @@
+.planet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 530px;
+}
+
+.planet-image {
+  height: 400px;
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  .planet-container {
+    height: 200px;
+  }
+  .planet-image {
+    height: 200px;
+    padding-top: 5%;
+  }
+
+  .image-earth{
+    height: 200px;
+    width: 200px;
+  }
+}

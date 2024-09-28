@@ -1,3 +1,173 @@
-.destination-container{
-    color: #fff;
+.destination-container {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 590px;
+}
+
+.destination-image-planet {
+  width: 45%;
+}
+
+.destination-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.destination-submenu-container {
+  width: 55%;
+}
+
+.destination-submenu-description {
+  height: 60%;
+}
+
+.destination-submenu {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination-submenu-options {
+  background-color: rgba(255, 255, 255, 0.071);
+  backdrop-filter: blur(20px);
+  width: 450px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination-button {
+  background-color: transparent;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.destination-button:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: solid 3px #fff;
+  border-radius: 0;
+}
+
+.destination-description {
+  height: 50%;
+}
+
+.destination-distance-days {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.destination-distance {
+  width: 50%;
+}
+
+.destination-days {
+  width: 50%;
+}
+
+.destination-title-description {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bellefair", serif;
+}
+
+.destination-title-2-description {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Bellefair", serif;
+}
+
+.destination-distance-description,
+.destination-days-description {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+}
+
+.destination-image {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  height: 100px;
+  background-color: transparent;
+}
+
+.destination-image-2 {
+  position: absolute;
+  left: 33%;
+  top: 80%;
+  height: 100px;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .destination-container {
+    flex-direction: column;
+  }
+
+  .destination-image-planet,
+  .destination-submenu-description {
+    width: 100%;
+    height: 50%;
+  }
+
+  .destination-description {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .destination-title {
+    margin: 0;
+    margin-top: -30px;
+  }
+
+  .destination-submenu-container {
+    width: 100%;
+  }
+
+  .destination-submenu {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: -20px;
+  }
+
+  .destination-distance-days {
+    margin-top: 10%;
+  }
+
+  .destination-distance {
+    margin-right: 15px;
+  }
+
+  .destination-image {
+    position: absolute;
+    left: 5%;
+    top: 34%;
+    height: 90px;
+    background-color: transparent;
+  }
+
+  .destination-image-2 {
+    position: absolute;
+    left: 70%;
+    top: 34%;
+    height: 90px;
+    background-color: transparent;
+  }
 }

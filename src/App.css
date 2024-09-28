@@ -1,10 +1,35 @@
-.app-container {
+.fondo-inicio {
   background-image: url("./IMG/Fondo.svg");
   background-size: cover;
   background-position: center;
   height: 100vh; 
   width: 100vw;
 }
+
+.fondo-destino {
+  background-image: url("./IMG/Destination.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  width: 100vw;
+}
+
+.fondo-tripulacion {
+  background-image: url("./IMG/Crew.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  width: 100vw;
+}
+
+.fondo-tecnologia {
+  background-image: url("./IMG/Technology.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  width: 100vw;
+}
+
 
 @media (max-width: 768px) {
   .app-container {

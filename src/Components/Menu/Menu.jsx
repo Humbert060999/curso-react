@@ -1,9 +1,8 @@
 import "./Menu.css";
 import { NavLink } from "react-router-dom";
 import IconoEstrella from "../../IMG/Logo.svg";
-import { Button } from "antd";
 
-export default function Navigation() {
+export default function Menu({ changeBackground }) {
   return (
     <div className="menu-container">
       <div className="icon-star">
@@ -16,37 +15,45 @@ export default function Navigation() {
         <div className="button-content">
           <NavLink
             to="/"
-            style={{ color: "white" }}
-            className={({ isActive }) => (isActive ? "active" : "")}
+            className={({ isActive, isPending }) =>
+              `button-options ${isActive ? "active" : isPending ? "pending" : ""}`
+            }
+            onClick={() => changeBackground("fondo-inicio")}
           >
-            <button className="button-options"><b>00</b> INICIO</button>
+            <b>00</b> INICIO
           </NavLink>
         </div>
         <div className="button-content">
           <NavLink
             to="/destinos"
-            style={{ color: "white" }}
-            className={({ isActive }) => (isActive ? "active" : "")}
+            className={({ isActive, isPending }) =>
+              `button-options ${isActive ? "active" : isPending ? "pending" : ""}`
+            }
+            onClick={() => changeBackground("fondo-destino")}
           >
-            <button className="button-options"><b>01</b> DESTINOS</button>
+            <b>01</b> DESTINOS
           </NavLink>
         </div>
         <div className="button-content">
           <NavLink
             to="/tripulacion"
-            style={{ color: "white" }}
-            className={({ isActive }) => (isActive ? "active" : "")}
+            className={({ isActive, isPending }) =>
+              `button-options ${isActive ? "active" : isPending ? "pending" : ""}`
+            }
+            onClick={() => changeBackground("fondo-tripulacion")}
           >
-            <button className="button-options"><b>02</b> TRIPULACION</button>
+            <b>02</b> TRIPULACION
           </NavLink>
         </div>
         <div className="button-content">
           <NavLink
-            to="tecnologias"
-            style={{ color: "white" }}
-            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/tecnologias"
+            className={({ isActive, isPending }) =>
+              `button-options ${isActive ? "active" : isPending ? "pending" : ""}`
+            }
+            onClick={() => changeBackground("fondo-tecnologia")}
           >
-            <button className="button-options"><b>03</b> TECNOLOGIA</button>
+            <b>03</b> TECNOLOGIA
           </NavLink>
         </div>
       </div>
