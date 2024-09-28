@@ -50,20 +50,20 @@
   background-color: #ffffff7d;
   border-radius: 50%;
   cursor: pointer;
-  outline: none; 
-  border: none; 
+  outline: none;
+  border: none;
 }
 
 .menu-item:hover {
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .menu-item:hover {
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 .menu-item:focus {
-  outline: none; 
-background-color: #fff;
+  outline: none;
+  background-color: #fff;
 }
 
 .crew-photo-container {
@@ -74,4 +74,49 @@ background-color: #fff;
 
 .crew-photo {
   width: 58%;
+}
+
+@media (max-width: 768px) {
+  .crew-container {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crew-description {
+    width: 85%;
+    text-align: center;
+  }
+
+  .crew-title {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .crew-range {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .crew-name {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .crew-text {
+    font-size: 18px;
+  }
+
+  .crew-menu{
+    width: 100%;
+  }
+
+  .crew-photo-container{
+    width: 100%;
+  }
+
+  .crew-photo{
+    height: 90%;
+    margin-top: 5%;
+  }
 }
